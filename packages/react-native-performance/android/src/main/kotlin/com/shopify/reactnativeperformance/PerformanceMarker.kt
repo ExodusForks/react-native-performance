@@ -121,7 +121,7 @@ class PerformanceMarkerManager : SimpleViewManager<PerformanceMarker>() {
         view.componentInstanceId = componentInstanceId
     }
 
-    override fun getExportedCustomDirectEventTypeConstants(): MutableMap<String, Any> {
+    override fun getExportedCustomDirectEventTypeConstants(): Map<String, Any> {
         return MapBuilder.builder<String, Any>().put(
                 "onRenderComplete",
                 MapBuilder.of(
